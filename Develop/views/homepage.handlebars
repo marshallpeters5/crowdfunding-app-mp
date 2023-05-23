@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crowdfunding App - Homepage</title>
+</head>
+<body>
+  <h1>Crowdfunding App - Projects</h1>
+  <ul>
+    {{#each projects}}
+      <li>
+        <h2>{{this.name}}</h2>
+        <p>Description: {{this.description}}</p>
+        <p>Funding Goal: {{this.fundingGoal}}</p>
+        <p>Current Funding: {{this.currentFunding}}</p>
+      </li>
+    {{/each}}
+  </ul>
+</body>
+</html>
